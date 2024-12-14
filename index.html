@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
     <header class="header">
@@ -48,8 +43,8 @@
                 Soy un joven técnico en programación egresado de CECyTEM...
             </p>
             <div class="butons">
-                <!-- Botón actualizado para que baje a "Experiencia" -->
-                <a href="#experiencia" class="btn-1">Tecnologías</a>
+                <!-- Botón actualizado con clase para el deslizamiento -->
+                <a href="#experiencia" class="btn-1 scroll-to">Tecnologías</a>
             </div>
         </div>
     </section>
@@ -86,5 +81,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // JavaScript para desplazamiento suave
+        document.querySelectorAll('.scroll-to').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // Ajustar para compensar encabezados fijos
+                        behavior: 'smooth' // Deslizamiento suave
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
