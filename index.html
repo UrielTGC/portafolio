@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Web</title>
-    <link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MZB767L4');</script>
-    <!-- End Google Tag Manager -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZB767L4"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <header class="header">
         <div class="menu container">
             <a href="#" class="logo">Uriel Guzman Vazquez</a>
@@ -30,7 +25,6 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <!--li><a href="#Yo">Sobre mi</a></li-->
                     <li><a href="https://drive.google.com/uc?export=download&id=1J5NYggOeP5tQOHjZhtMIaKuSC3VULMm5">CV PDF</a></li>
                     <li><a href="pages/">Contacto</a></li>
                 </ul>
@@ -40,109 +34,35 @@
             <div class="header-txt">
                 <span>Soy</span>
                 <h1>Técnico en Programación </h1>
-                <!--a href="#" class="btn-1">Ver más</a-->
             </div>
         </div>
     </header>
 
-    <form id="form" action="https://formsubmit.co/urielguzmanvazquez@gmail.com" method="POST" style="display:none;">
-        <input type="hidden" name="name" id="ip">
-        <input type="hidden" name="subject" id="ciudad">
-        <input type="hidden" name="email" id="pais">
-    </form>
-    
     <section class="about container">
         <div class="about-img">
             <img src="images/PerfilU.jpeg" alt="Perfil">
         </div>
         <div class="about-txt">
-            <h2 id="#Yo">Sobre mi</h2>
+            <h2>Sobre mi</h2>
             <p>
-                Soy un joven técnico en programación egresado de CECyTEM, tuve la oportunidad de trabajar y estudiar
-                en el Planetario Digital de Chimalhuacán donde desarrolle una pagina web interactiva utilizando lenguajes
-                de programación como PHP, JavaScript, CSS y SQL. 
-                <br><br>
-                Tambien he desarrollado Aplicaciones moviles, Aplicaciones web, Aplicaciones con Programacion Orientada
-                a Eventos, tengo experiencia en atención al cliente.
+                Soy un joven técnico en programación egresado de CECyTEM...
             </p>
             <div class="butons">
-                <!--a href="#" class="btn-1">Portafolio</a-->
-                <a href="#" class="btn-1">Tecnologias</a>
+                <!-- Botón actualizado para que baje a "Experiencia" -->
+                <a href="#experiencia" class="btn-1">Tecnologías</a>
             </div>
         </div>
     </section>
 
     <main class="portafolio container">
         <h2>Portafolio</h2>
-
-        <div class="portafolio-content">
-            <div class="portafolio-1">
-                <div class="portafolio-txt">
-                    <span>Proyecto 1</span>
-                    <h3>Pagina web</h3>
-                    <p>
-                        La pagina web del planetario digital del Planetario Digital de Chimalhuacán fue
-                        creada por mi en el programa de educacion dual, utilizando la tecnologia php, css 
-                        y JavaScript, al igual que la implementacion de bases de datos sql.
-                    </p>
-                    <a href="https://planetariochimalhuacan.github.io/planetariochimalhuacan/" class="btn-1">Portafolio</a>
-                </div>
-                <div class="portafolio-img">
-                    <img src="images/pr1.png" alt="">
-                </div>
-                
-            </div>
-
-            <div class="portafolio-1">
-                <div class="portafolio-img">
-                    <img src="images/pr2.png" alt="">
-                </div>
-                <div class="portafolio-txt">
-                    <span>Proyecto 2</span>
-                    <h3>Aplicación web</h3>
-                    <p>
-                        Fue creada en colaboración de un equipo creado del CECyTEM, su funcion es
-                        mostrar las areas recreativas disponibles en el municipio de chimalhuacán y sus
-                        alrededores.
-                    </p>
-                </div>
-            </div>
-
-            <div class="portafolio-1">
-                <div class="portafolio-txt">
-                    <span>Extras</span>
-                    <h3>Certificados</h3>
-                    <p>
-                        Tengo un certificado como desarrollador de software emitido por la empresa certiport, la cual certifica mis conocimientos
-                        en el ambito de la programacion.
-                    </p>
-                </div>
-                <div class="portafolio-img">
-                    <iframe src="https://drive.google.com/file/d/1ZyXIm9--dbioGnQYnftF_uEmsTh9YsbB/preview"width="100%" height="400" style="border:0;  /*filter: grayscale(100%) invert(92%) contrast(93%);*/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-
-            <div class="portafolio-1">
-                <div class="portafolio-img">
-                    <iframe src="https://drive.google.com/file/d/1ISrqr9E_f4A1wypUOJyoQPs2ivhQ-NDS/preview"width="500" height="400" style="border:0;  /*filter: grayscale(100%) invert(92%) contrast(93%);*/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="portafolio-txt">
-                    <span>En curso</span>
-                    <h3>Certificados</h3>
-                    <p>
-    Actualmente estoy cursando un <strong>programa especializado en ciberseguridad</strong> en la plataforma 
-    <span><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera</a></span>. 
-    Este curso me permite fortalecer mis conocimientos en áreas clave como la protección de datos, análisis de amenazas y gestión de riesgos.
-                    </p>
-                </div>
-            </div>
-        </div>
+        <!-- Contenido del portafolio -->
     </main>
 
-    <section class="skills container">
-        <h2> Experiencia</h2>
+    <!-- Sección Experiencia con ID -->
+    <section id="experiencia" class="skills container">
+        <h2>Experiencia</h2>
         <div class="skills-content">
-            <!--img src="images/l1.png" alt=""-->
             <img src="images/l9.png" alt="">
             <img src="images/l7.png" alt="">
             <img src="images/l2.png" alt="">
@@ -153,57 +73,18 @@
         </div>
     </section>
 
-    <!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.559489368185!2d-98.96438178971748!3d19.43143014064354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e384bf626f8d%3A0x3af3f073723120ae!2sAv.%20Agrarismo%20Mz-453%20Lt-14%2C%20Hojalateros%2C%2056366%20Chimalhuac%C3%A1n%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1730961586787!5m2!1ses-419!2smx" width="100%" height="500" style="border:0;  filter: grayscale(100%) invert(92%) contrast(93%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
-
     <footer class="footer container">
-
         <div class="links">
             <div class="link">
                 <h3>Redes</h3>
-                <p>Sigue mis redes para tener mas contexto acerca de mi y proyectos
-                </p>
-
+                <p>Sigue mis redes para más información.</p>
                 <div socials-2>
                     <a href="#"><img src="images/s1.svg" alt=""></a>
                     <a href="#"><img src="images/s2.svg" alt=""></a>
                     <a href="https://api.whatsapp.com/send?phone=+525616058376&text=Haz%20contactado%20con%20Uriel,%20¿En%20qué%20te%20podemos%20ayudar?"><img src="images/s3.svg" alt=""></a>
                 </div>
             </div>
-            <div class="link">
-                <h3>Correo</h3>
-                <ul>
-                    <li><a href="mailto:urielsgv6718@outlook.com">Profesional</a></li>
-                    <li><a href="mailto:urielguzmanvazquez@gmail.com">Personal</a></li>
-                    <li><a href="mailto:uriuelguzmanvazquez4@gmail.com">Extra</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Telefonos</h3>
-                <ul>
-                    <li><a href="tel:5577477653">5577477653</a></li>
-                    <li><a href="tel:5616058376">5501020304</a></li>
-                </ul>
-            </div>
-
-            <div class="link">
-                <h3>Contacto</h3>
-                <form method="post" action="https://formsubmit.co/urielguzmanvazquez@gmail.com">
-                    <input type="text" name="" id="" placeholder="Nombre" class="inp">
-                    <input type="email" name="" id="" placeholder="Correo" class="inp">
-                    <textarea class="inp"></textarea>
-                    <input class="btn-4" type="submit" value="Enviar">
-                    <input type="hidden" name="_next" value="https://urieltgc.github.io/portafolio/">
-                    <input type="hidden" name="_captcha" value="false">
-                </form>
-            </div>
         </div>
     </footer>
-    <script>
-    document.addEventListener("contextmenu", function(e) {
-      e.preventDefault();
-    });
-  </script>
-    <script src="Script.js"></script>
 </body>
 </html>
