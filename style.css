@@ -21,51 +21,50 @@ img{
     margin: 0 auto;
 }
 
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+/* Estilos del header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 100px;
 }
 
-.logo{
-    color: #49bada;
-    font-size: 25px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
     color: #ffffff;
+}
+
+.bars {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
     display: block;
+    color: #FFFFFF;
+    font-size: 18px;
     font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin: 0 5px;
 }
 
-.menu .navbar ul li:hover{
-    color: #49bada;
+.nav-bar ul li a.active {
+    color: #ffffff;
+    background-color: #00c3ff;
 }
 
-#menu{
-    display: none;
-}
-
-.menu-icono{
-    width: 10px;
-}
-
-.menu label{
-    cursor: pointer;
-    display: none;
+.nav-bar ul li a:hover {
+    color: #ffffff;
+    background-color: #460140;
 }
 
 .header {
@@ -271,35 +270,55 @@ h2{
     color: #dfdde0;
 }
 @media(max-width:991px){
-    .menu{
-        padding: 20px;
+    header {
+        padding: 0px 30px;
     }
 
-    .menu label{
-        display: initial;
+    .bars {
+        display: block;
+        cursor: pointer;
     }
 
-    .menu .navbar{
+    .bars .line {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0px;
+    }
+
+    .nav-bar {
+        height: 0px;
         position: absolute;
-        top: 100%;
+        top: 80px;
         left: 0;
         right: 0;
-        background-color: #49bada;
-        display: none;
+        width: 100vw;
+        background-color: #0f30632c;
+        backdrop-filter: blur(20px);
+        transition: 0.5s;
+        overflow: hidden;
     }
 
-    .menu .navbar ul li a:hover{
-        color: #101630;
+    .nav-bar.active {
+        height: 450px;
     }
 
-    .menu .navbar ul li{
-        width: 100%;
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
     }
 
-    #menu:checked ~ .navbar{
-        display: initial;
+    .nav-bar.active ul {
+        opacity: 1;
     }
 
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+    }
     .header{
         min-height: 0vh;
         padding: 100px 30px 30px 30px;
