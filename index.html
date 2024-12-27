@@ -3,54 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Web</title>
-    <link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MZB767L4');</script>
-    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZB767L4"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">Uriel Guzman Vazquez</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="images/menu.png" alt="menu" class="menu-icon">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <!--li><a href="#Yo">Sobre mi</a></li-->
-                    <li><a href="https://drive.google.com/uc?export=download&id=1J5NYggOeP5tQOHjZhtMIaKuSC3VULMm5">CV PDF</a></li>
-                    <li><a href="pages/">Contacto</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="logo">Uriel Guzman Vazquez</div>
+        <div class="bars">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-        <div class="header-content container">
-            <div class="header-txt">
-                <span>Soy</span>
-                <h1>Técnico en Programación </h1>
-                <!--a href="#" class="btn-1">Ver más</a-->
-            </div>
-        </div>
-    </header>
 
-    <form id="form" action="https://formsubmit.co/urielguzmanvazquez@gmail.com" method="POST" style="display:none;">
-        <input type="hidden" name="name" id="ip">
-        <input type="hidden" name="subject" id="ciudad">
-        <input type="hidden" name="email" id="pais">
-    </form>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="#" class="active">Inicio</a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/uc?export=download&id=1J5NYggOeP5tQOHjZhtMIaKuSC3VULMm5">CV PDF</a>
+                </li>
+                <li>
+                    <a href="pages/">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     
+    <div class="header-content container">
+        <div class="header-txt">
+            <span>Soy</span>
+            <h1>Técnico en Programación </h1>
+            <!--a href="#" class="btn-1">Ver más</a-->
+        </div>
+    </div>
     <section class="about container">
         <div class="about-img">
             <img src="images/PerfilU.jpeg" alt="Perfil">
@@ -67,7 +52,7 @@
             </p>
             <div class="butons">
                 <!--a href="#" class="btn-1">Portafolio</a-->
-                <a href="#" class="btn-1">Tecnologias</a>
+                <a href="#tec" onclick="smoothScroll(event, 'tec')" class="btn-1">Tecnologias</a>
             </div>
         </div>
     </section>
@@ -85,7 +70,7 @@
                         creada por mi en el programa de educacion dual, utilizando la tecnologia php, css 
                         y JavaScript, al igual que la implementacion de bases de datos sql.
                     </p>
-                    <a href="https://planetariochimalhuacan.github.io/planetariochimalhuacan/" class="btn-1">Portafolio</a>
+                    <a href="https://planetariochimalhuacan.github.io/planetariochimalhuacan/" class="btn-1">Planetario Chimalhuacan</a>
                 </div>
                 <div class="portafolio-img">
                     <img src="images/pr1.png" alt="">
@@ -105,6 +90,7 @@
                         mostrar las areas recreativas disponibles en el municipio de chimalhuacán y sus
                         alrededores.
                     </p>
+                    <a href="https://youtu.be/PeLCoj3ITmI?si=wCrHtruSi018Xq4d" class="btn-1">Ver video</a>
                 </div>
             </div>
 
@@ -116,14 +102,17 @@
                         Tengo un certificado como desarrollador de software emitido por la empresa certiport, la cual certifica mis conocimientos
                         en el ambito de la programacion.
                     </p>
+                    
                 </div>
                 <div class="portafolio-img">
+                    <a href="#" class="btn-1">Necesitas acceso para ver el Certificado</a>
                     <!--iframe src="https://drive.google.com/file/d/1ZyXIm9--dbioGnQYnftF_uEmsTh9YsbB/preview"width="100%" height="400" style="border:0;  /*filter: grayscale(100%) invert(92%) contrast(93%);*/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
                 </div>
             </div>
 
             <div class="portafolio-1">
                 <div class="portafolio-img">
+                    <a href="#" class="btn-1">Necesitas acceso para ver el Certificado</a>
                     <!--iframe src="https://drive.google.com/file/d/1ISrqr9E_f4A1wypUOJyoQPs2ivhQ-NDS/preview"width="500" height="400" style="border:0;  /*filter: grayscale(100%) invert(92%) contrast(93%);*/" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe-->
                 </div>
                 <div class="portafolio-txt">
@@ -139,7 +128,7 @@
         </div>
     </main>
 
-    <section class="skills container">
+    <section class="skills container" id="tec">
         <h2> Experiencia</h2>
         <div class="skills-content">
             <!--img src="images/l1.png" alt=""-->
@@ -150,6 +139,7 @@
             <img src="images/l4.png" alt="">
             <img src="images/l5.png" alt="">
             <img src="images/l8.png" alt="">
+            <img src="images/l10.png" alt="">
         </div>
     </section>
 
@@ -204,6 +194,6 @@
       e.preventDefault();
     });
   </script>
-    <script src="Script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
